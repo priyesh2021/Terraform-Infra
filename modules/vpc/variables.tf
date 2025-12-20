@@ -20,5 +20,5 @@ variable "azs" {
 
 variable "tags" {
     description = "Common tags"
-    type        = list(string)
+    type        = map(string)
 }
