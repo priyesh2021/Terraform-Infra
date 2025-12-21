@@ -27,3 +27,12 @@ variable "terraform_execution_role_arn" {
 variable "aws_region" {
   type = string
 }
+variable "public_instance_type" {
+  type = string
+}
+variable "private_instance_type" {
+  type = string
+}
+variable "ami_id" {
+  type = string
+}
