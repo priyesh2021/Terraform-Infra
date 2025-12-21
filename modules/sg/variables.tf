@@ -8,10 +8,10 @@ variable "vpc_id" {
 
 variable "ingress_rule" {
   type = list(object({
-    from_port   = number
-    to_port     = number
-    protocol    = string
-    cidr_block  = list(string)
+    from_port  = number
+    to_port    = number
+    protocol   = string
+    cidr_block = list(string)
   }))
 }
 
