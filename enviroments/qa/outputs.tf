@@ -15,3 +15,8 @@ output "qa_public_ec2_public_ip" {
   description = "Public IP of QA public EC2 instance"
   value       = module.qa_public_ec2.public_ip
 }
+
+output "qa_alb_dns_name" {
+  description = "DNS name of qa alb"
+  value       = module.qa_alb.alb_dns_name
+}
