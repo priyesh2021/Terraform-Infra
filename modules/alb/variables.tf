@@ -17,3 +17,11 @@ variable "target_port" {
 variable "tags" {
   type = map(string)
 }
+variable "lb_type" {
+  description = "Load Balancer Type"
+  type = string
+}
+variable "protocol" {
+  type = number
+  default = "HTTP"
+}

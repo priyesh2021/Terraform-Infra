@@ -25,6 +25,7 @@ module "qa_alb" {
   vpc_id             = module.vpc.vpc_id
   subnet_ids         = module.vpc.public_subnet_ids
   security_group_ids = [module.qa_alb_sg.security_group_id]
+  lb_type            = "application"
   tags               = var.tags
 }
 
