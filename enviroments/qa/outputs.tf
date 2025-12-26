@@ -20,3 +20,8 @@ output "qa_alb_dns_name" {
   description = "DNS name of qa alb"
   value       = module.qa_alb.alb_dns_name
 }
+
+output "qa_nlb_dns_name" {
+  description = "DNS name of qa nlb"
+  value       = module.qa_nlb.alb_dns_name
+}

@@ -22,6 +22,6 @@ variable "lb_type" {
   type = string
 }
 variable "protocol" {
-  type = number
+  type = string
   default = "HTTP"
 }

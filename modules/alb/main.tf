@@ -27,7 +27,7 @@ resource "aws_alb_target_group" "this" {
 resource "aws_alb_listener" "http" {
   load_balancer_arn         = aws_alb.this.arn
   port                      = 80
-  protocol                  = "HTTP"
+  protocol                  = var.protocol
 
   default_action {
     type                    = "forward"
