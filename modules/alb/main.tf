@@ -7,7 +7,7 @@ resource "aws_alb" "this" {
 }
 
 resource "aws_alb_target_group" "this" {
-  name                      = "$(var.name)-tg"
+  name                      = "${var.name}-tg"
   port                      = var.target_port
   protocol                  = var.protocol
   vpc_id                    = var.vpc_id
