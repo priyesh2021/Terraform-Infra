@@ -1,3 +1,19 @@
+resource "aws_launch_template" "this" {
+  name_prefix   = "${var.name}-lt-"
+  image_id      = var.ami_id
+
+  instance_type = var.instance_types[0]
+
+  vpc_security_group_ids = var.security_group_ids
+
+  tag_specifications {
+    resource_type = "instance"
+    tags = merge(var.tags, {
+      Name = var.name
+    })
+  }
+}
+
 resource "aws_autoscaling_group" "this" {
   name                  = var.name
   desired_capacity      = var.desired_capacity
