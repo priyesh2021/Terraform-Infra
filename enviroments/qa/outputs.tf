@@ -29,3 +29,7 @@ output "qa_nlb_dns_name" {
 output "qa_asg_name" {
   value = module.qa_asg.asg_name
 }
+
+output "qa_lambda_function_arn" {
+  value = module.qa_lambda.lambda_function_arn
+}
