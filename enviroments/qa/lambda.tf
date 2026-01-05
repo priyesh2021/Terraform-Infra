@@ -41,7 +41,7 @@ module "qa_lambda" {
   lambda_zip_path = each.value.zip_path
   lambda_role_arn = "arn:aws:iam::590183742092:role/common-lambda-execution-role"
 
-  timeout      = each.value.timeout
+  timeout     = each.value.timeout
   memory_size = each.value.memory
 
   environment_variables = {
