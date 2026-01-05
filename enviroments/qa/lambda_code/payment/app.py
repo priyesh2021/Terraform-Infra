@@ -1,5 +1,5 @@
 def handler(event, context):
     return {
         "statusCode": 200,
-        "body": "Hello from ZIP-based Lambda"
+        "body": "Hello from payment team."
     }
